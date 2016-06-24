@@ -1,0 +1,24 @@
+<ion-view view-title="checkoutForm">
+
+  <ion-header-bar class="bar item-icon-right" style="background-color: #F6846A">
+
+    <p class="title" style="left: 12%;color: white;">Checkout</p>
+
+  </ion-header-bar>
+
+  <ion-content style="background-color: #E8E8E8;">
+
+    <div class="list" collection-repeat="item in checkout.cartItemList">
+
+      <a class="item item-thumbnail-left" href="#">
+        <h2>{{item.name}}</h2>
+        <h5>Items : {{item.totalItems}}</h5>
+        <h5>Total Price : {{item.totalPrice}}</h5>
+      </a>
+
+      <button class="icon ion-ios-close" ng-click="checkout.removeItem($index)"></button>
+    </div>
+
+  </ion-content>
+
+</ion-view>
