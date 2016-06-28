@@ -1,0 +1,22 @@
+
+
+
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class = "title">Modal Title</h1>
+  </ion-header-bar>
+
+  <ion-content>
+          <h1>Name : {{modalData.name}}</h1>
+          <h3>Price : {{modalData.price * home.selectedQuantity}}</h3>
+      <h3>Items :
+         <button class="icon ion-plus" ng-click="home.addQuantity()"></button>
+            {{home.selectedQuantity}}
+        <button class="icon ion-minus" ng-click="home.removeQuantity()"></button>
+      </h3>
+
+
+    <button  ng-click="home.addToBack()">Add To back</button>
+
+  </ion-content>
+</ion-modal-view>

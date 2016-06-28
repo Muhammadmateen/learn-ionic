@@ -1,0 +1,33 @@
+
+
+<ion-view>
+  <ion-content>
+
+    <div class="list card" ng-repeat="aa in home.items">
+
+      <div class="item item-avatar">
+        <img src="img/icon.png">
+        <h2>{{aa.name}}</h2>
+        <p>Price : {{aa.price}}</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="img/splash.png" src="">
+        <p>
+          This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+          the content is from a card-body consisting of an image and paragraph text. The footer
+          consists of tabs, icons aligned left, within the card-footer.
+        </p>
+        <p>
+          <button class="icon ion-plus" ng-click="home.addToCart($index)">Add To Cart</button>
+        </p>
+      </div>
+
+    </div>
+
+
+
+
+
+  </ion-content>
+</ion-view>
